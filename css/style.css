@@ -19,8 +19,9 @@
 }
 
 .resume {
-  height: 105vh;
+  height: 250vh;
   width: 100vw;
+  max-height: 1450px;
   max-width: 1300px; /* Optional: Limit the maximum width */
   border-radius: 10px;
   background-color: #b5bfea; /* Light gray */
