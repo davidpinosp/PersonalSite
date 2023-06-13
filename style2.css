@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Bagel Fat One";
+  src: url("fonts/BagelFatOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Grandiflora One";
+  src: url("fonts/GrandifloraOne-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "Grandiflora One", Arial, sans-serif;
+  font-size: 25px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
+}
+
+.heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0px 40px;
+  border-bottom: 2px solid black;
+
+  /* border-bottom: 3px solid black; */
+}
+.title-font {
+  font-family: "Bagel Fat One", Arial, sans-serif;
+  font-size: 2em;
+}
+
+.me-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Bagel Fat One", Arial, sans-serif;
+  font-size: 1.5em;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 100px;
+}
+.about-me {
+  grid-column: 1;
+  grid-row: 1/3;
+  padding: 0 10px 50px 20px;
+}
+.resume {
+  /* height: 20vh;
+    width: 40vw; */
+
+  padding: 0 20px 50px 10px;
+}
+
+.download {
+  padding: 0px 0px 50px 50px;
+}
+
+.personal-image {
+  margin: 50px;
+
+  height: 50vw;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* height: 100%;
+    width: 100%; */
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about-me {
+    grid-row: 1;
+  }
+
+  .personal-image {
+    margin: 50px;
+
+    height: 50vw;
+    width: auto;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.about-me h2 {
+  font-size: 1.5em;
+}
+
+.resume h2 {
+  font-size: 1.5em;
+}
+
+.inline-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.bold-text {
+  font-weight: bold;
+}

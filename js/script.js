@@ -7,7 +7,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const mouseY = event.clientY - 200;
 
     // Update the image position to chase the cursor
-    image.style.left = mouseX + "px";
-    image.style.top = mouseY + "px";
+    if (mouseY > 0) {
+      image.style.left = mouseX + "px";
+      image.style.top = mouseY + "px";
+    }
   });
 });

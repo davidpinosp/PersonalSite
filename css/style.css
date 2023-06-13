@@ -1,6 +1,17 @@
+* {
+  font-size: 1em;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 .title {
   text-align: center;
   color: #2c3e50; /* Dark blue */
+}
+body {
+  margin: 0;
 }
 
 .indent {
@@ -19,16 +30,15 @@
 }
 
 .resume {
-  height: 250vh;
+  height: 200vh;
   width: 100vw;
-  max-height: 1450px;
-  max-width: 1300px; /* Optional: Limit the maximum width */
+
+  max-width: 1000px; /* Optional: Limit the maximum width */
   border-radius: 10px;
   background-color: #b5bfea; /* Light gray */
   text-align: left;
-  margin: 50px auto; /* Center the div horizontally */
   padding: 20px; /* Optional: Add padding */
-  overflow: hidden;
+
   font-family: "Roboto", Arial, sans-serif; /* Modern font */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Shadow effect */
 }
@@ -58,7 +68,4 @@
 
 .second {
   background-color: #34495e;
-}
-body {
-  margin: 0;
 }
