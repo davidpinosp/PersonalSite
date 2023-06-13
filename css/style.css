@@ -1,57 +1,27 @@
-* {
-  font-size: 1em;
+@font-face {
+  font-family: "Bagel Fat One";
+  src: url("fonts/BagelFatOne-Regular.ttf") format("truetype");
 }
+
+* {
+  font-family: "Bagel Fat One", Arial, sans-serif;
+  font-size: 25px;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
-}
-.title {
-  text-align: center;
-  color: #2c3e50; /* Dark blue */
-}
-body {
-  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
 }
 
-.indent {
-  padding-left: 12px;
-}
-
-.degree {
-  font-weight: bold;
-}
-
-.back {
+.header {
+  margin: 0px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #34495e; /* Dark blue */
-}
-
-.resume {
-  height: 200vh;
-  width: 100vw;
-
-  max-width: 1000px; /* Optional: Limit the maximum width */
-  border-radius: 10px;
-  background-color: #b5bfea; /* Light gray */
-  text-align: left;
-  padding: 20px; /* Optional: Add padding */
-
-  font-family: "Roboto", Arial, sans-serif; /* Modern font */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Shadow effect */
-}
-
-.resume a:link,
-.resume a:visited {
-  color: #2c3e50; /* Dark blue */
-  text-decoration: none;
-}
-
-.resume a:hover {
-  color: #fefa00; /* Red */
-  cursor: pointer;
+  padding: 0px 20px;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
 }
 
 #container {
@@ -64,8 +34,40 @@ body {
   height: 400px;
   width: 400px;
   position: absolute;
+  margin: 0px;
+  /* Adjust the transition duration and easing as desired */
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-.second {
-  background-color: #34495e;
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.about-me h2 {
+  font-size: 1.5em;
+}
+
+.resume h2 {
+  font-size: 1.5em;
+}
+
+.inline-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.bold-text {
+  font-weight: bold;
+}
+.link {
+  text-decoration: none;
+  color: black;
 }
